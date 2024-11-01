@@ -21,7 +21,7 @@ def init():
 # Funktion zur Aktualisierung der Animation
 def update(frame):
     x = data['x'][frame]
-    y = data['y'][frame]
+    y = data['y'][frame]    
     line.set_data([0, x], [0, y])
     return line,
 

@@ -35,7 +35,7 @@ public:
 };
 
 int main() {
-    const double g = 119.81;   // Erdbeschleunigung in m/s^2
+    const double g = 9.81;   // Erdbeschleunigung in m/s^2
     const double L = 1.0;    // Länge des Pendels in Metern
     const double dt = 0.02;  // Zeitschritt in Sekunden
     const int steps = 500;    // Anzahl der Zeitschritte
