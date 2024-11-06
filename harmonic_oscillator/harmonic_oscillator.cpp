@@ -44,7 +44,7 @@ int main() {
     Pendulum pendulum(L, g, dt);
 
     // Datei zur Ausgabe der Ergebnisse
-    std::ofstream outfile("/home/wolff/git/scientific-programming/bin/spendulum_data.csv");
+    std::ofstream outfile("/home/jomon/git-repository/scientific-programming/harmonic_oscillator/spendulum_data.csv");
     outfile << "time,angle,x,y\n";
 
     double t = 0.0;  // Startzeit
@@ -61,6 +61,6 @@ int main() {
     }
 
     outfile.close();
-    std::cout << "Simulation abgeschlossen! Daten gespeichert in 'pendulum_data.csv'.\n";
+    std::cout << "Simulation abgeschlossen! Daten gespeichert in 'spendulum_data.csv'.\n";
     return 0;
 }

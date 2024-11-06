@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 import matplotlib.animation as animation
 from matplotlib.animation import PillowWriter
 # Lade die Daten aus der CSV-Datei
-data = pd.read_csv("/home/wolff/git/scientific-programming/bin/spendulum_data.csv")
+data = pd.read_csv("/home/jomon/git-repository/scientific-programming/harmonic_oscillator/spendulum_data.csv")
 
 # Initialisiere das Diagramm
 fig, ax = plt.subplots()
@@ -29,4 +29,4 @@ def update(frame):
 ani = animation.FuncAnimation(fig, update, frames=len(data), init_func=init, blit=True)
 
 # Animation als GIF speichern mit PillowWriter
-ani.save('pendulum_animation.gif', writer=PillowWriter(fps=30))
+ani.save('/home/jomon/git-repository/scientific-programming/harmonic_oscillator/pendulum_animation.gif', writer=PillowWriter(fps=30))
